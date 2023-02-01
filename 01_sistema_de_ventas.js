@@ -76,6 +76,20 @@ class Orden{
         
         console.log(`Orden: ${this._idOrden}, Total:$${this.calcularTotal()}, Productos: ${productosOrden}`);
     }
+
+}
+
+function imprimir(tipo) {
+    if( tipo instanceof Producto ){
+        console.log("Es de tipo Producto");
+    }
+    if( tipo instanceof Orden ){
+        console.log("Es de tipo Orden");
+    }
+
+    if( tipo instanceof Object){
+        console.log("Es de tipo Object");
+    }
 }
 
 //Prueba de la clase Producto
@@ -114,7 +128,8 @@ orden3.agregarProducto(producto5);
 orden3.agregarProducto(producto1);//Aqui se muestra la condicion de MAX_PRODUCTOS que ya no se pueden agregar más productos.
 orden3.mostrarOrden();
 
-
+imprimir( producto1 );
+imprimir( orden1 );
 
 
 
