@@ -402,28 +402,3 @@ console.log(cliente1.toString());
 
 let cliente2 = new Cliente("Olivia", "Coronel", 55, new Date());
 console.log(cliente2.toString());
-
-
-/****************************************************SISTEMA DE VENTAS**************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
