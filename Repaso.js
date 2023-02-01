@@ -69,7 +69,7 @@ let persona = {
         this.idioma = lang.toUpperCase();//metodo para asignar valores
     },     
     get nombreCompleto(){
-        return this.nombre + ' ' + this.apellido;
+        return `${this.nombre} ${this.apellido}`;
     }
 
 
@@ -402,3 +402,16 @@ console.log(cliente1.toString());
 
 let cliente2 = new Cliente("Olivia", "Coronel", 55, new Date());
 console.log(cliente2.toString());
+
+//Perfil Fernando Coronel.
+const DesarrolladorWebJr = {
+    nombre: "Fernando",
+    apellido: "Coronel",
+    edad: 30,
+    email: "fernando.coronel.dev@gmail.com",
+    tel: "55 85512942",
+    softskills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    perfilCompleto: function(){
+      return  `Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años, actualmente estoy aprendiendo de forma autodidacta como desarrollador Front-End y eh adquirido softskills básicos como ${this.softskills} y una vez que tenga bien reforzados esos skills seguire con framework de React para aprender a crear Aplicaciones web que es una de mis grandes metas, dejo por aqui mi correo ${this.email} y mi número ${this.tel}.`
+    }
+}
