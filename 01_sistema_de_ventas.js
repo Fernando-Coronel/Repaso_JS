@@ -130,37 +130,3 @@ orden3.mostrarOrden();
 
 imprimir( producto1 );
 imprimir( orden1 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
