@@ -85,16 +85,3 @@ imprimir( empleado2 );
 
 imprimir( gerente1 );
 imprimir( gerente2 );
-
-
-
-
-
-
-
-
-
-
-
-
-
