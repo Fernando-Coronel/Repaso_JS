@@ -52,15 +52,4 @@ let reloj = () => {
     console.log(`${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`);
 };
 
-setInterval(reloj, 1000);//La funcion callback se llama cada segundo
-
-
-
-
-
-
-
-
-
-
-
+setInterval(reloj, 1000);//La funcion callback se llama cada segundo.

@@ -55,13 +55,3 @@ const miFuncion10 = (parametro1, parametro2) => {
 }
 
 console.log(miFuncion10(3, 2));
-
-
-
-
-
-
-
-
-
-

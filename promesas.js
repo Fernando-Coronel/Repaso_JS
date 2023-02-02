@@ -63,16 +63,3 @@ async function miFuncion3(){
 }
 
 miFuncion3();
-
-
-
-
-
-
-
-
-
-
-
-
-
