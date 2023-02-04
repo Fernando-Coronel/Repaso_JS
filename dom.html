@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+
+        .rojo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Formas de acceder a los elementos del documento HTML desde javascript. -->
+    <h1 id="title">DOM - JavaScript</h1>
+    <p id="parrafo">Parrafo</p>
+    
+    <!-- Metodo getElementsByTagName -->
+    <p id="parrafo1">Parrafo 1</p>
+    <p id="parrafo2">Parrafo 2</p>
+
+    <!-- Metodo getElementsByClassName -->
+    <p class="azul">Azul 1</p>
+    <p class="azul">Azul 2</p>
+
+    <!-- Metodo querySelectorAll -->
+    <p class="rojo">Rojo 1</p>
+    <p class="rojo">Rojo 2</p>
+
+    
+    <script>
+        //Formas de acceder a los elementos del documento HTML desde javascript.
+        let otroTitulo = "Titulo desde JavaScript";
+        let h1 = document.getElementById("title");
+        console.log("Valor de title: " + h1.innerHTML);
+        console.log(`Valor de title: ${h1.innerHTML}`);
+        h1.innerHTML = "Nuevo titulo";//Cambia el valor de la etiqueta HTML por el anterior.
+        console.log(`Valor de title: ${h1.innerHTML}`);
+        h1.innerHTML = otroTitulo;//asignacion de valor con una variable.
+        console.log(`Valor de title: ${h1.innerHTML}`);
+
+        let otroParrafo = "Parrafo desde JavaScript";
+        //let p = document.getElementById("parrafo").innerHTML;//otra forma de acceder al valor de las etiquetas HTML.
+        let p = document.getElementById("parrafo");//otra forma de acceder al valor de las etiquetas HTML.
+        console.log("Valor de parrafo: " + p.innerHTML);
+        console.log(`Valor de parrafo: ${p.innerHTML}`);
+        p.innerHTML = "Nuevo parrafo";//Cambia el valor de la etiqueta HTML por el anterior.
+        console.log(`Valor de parrafo: ${p.innerHTML}`);
+        p.innerHTML = otroParrafo;//asignacion de valor con una variable.
+        console.log(`Valor de parrafo: ${p.innerHTML}`);
+
+        //Metodo getElementsByTagName(metodo para acceder a todos los elementos con las etiquetas 'p' en este caso).
+        let parrafos = document.getElementsByTagName("p");
+        console.log(`Numero de parrafos: ${parrafos.length}`);
+        for(let i = 0; i<parrafos.length; i++){//Forma para recorrer los valores de la variable parrafos.
+            console.log(`i:${i} - ${parrafos[i].innerHTML}`);
+        };
+
+        //Metodo getElementsByClassName(metodo para acceder a todos los elementos que contengan una clase en este caso .azul).
+
+        let azul = document.getElementsByClassName("azul");
+        console.log(`Numero de parrafos con clase azul: ${azul.length}`);
+        for(let i = 0; i < azul.length; i++){
+            console.log(`i:${i} - ${azul[i].innerHTML}`);
+        } 
+        
+        //Otra forma de recorrer los elementos
+        // for(let elemento of azul){
+        //     console.log(`${elemento.innerHTML}`);
+        // }
+
+        //Metodo querySelectorAll(metodo para acceder a todos los elementos html, clases y ID incluso etiquetas con clase por ejemplo p.rojo).
+
+        let rojo = document.querySelectorAll("p.rojo");
+        console.log(`Numero de parrafos rojos: ${rojo.length}`);
+        for(let elemento of rojo){
+            console.log(`${elemento.innerHTML}`);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

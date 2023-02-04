@@ -63,3 +63,17 @@ async function miFuncion3(){
 }
 
 miFuncion3();
+
+let promesa3 = new Promise( (resolve, reject) =>{
+    let expresion = false;
+    if( expresion ){
+        resolve("Respuesta aceptada");
+    }
+    else{
+        reject("Conexion erronea");
+    }
+});
+
+promesa3
+.then( valor => { console.log(valor)})
+.catch( error => { console.log(error)})
