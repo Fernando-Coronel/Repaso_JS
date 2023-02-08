@@ -15,7 +15,8 @@
         }
     </style>
 </head>
-<body onload="entrar()">
+<body>
+<!-- <body onload="entrar()"> -->
     <!-- Formas de acceder a los elementos del documento HTML desde javascript. -->
     <h1 id="title">DOM - JavaScript</h1>
     <p id="parrafo">Parrafo</p>
@@ -89,7 +90,14 @@
         <input type="text" id="nombre2" onchange="convertir(this)">
     </label>
     <div id="muestraValor"></div>
+    <br>
+    <hr>
 
+    <!-- Manejo onmouseout y onmouseover -->
+    <h3 id="titulo2" onmouseover="cambiarRojo(this)" onmouseout="cambiarAzul(this)">Evento onmouseover</h3>
+    <p id="titulo2" onmouseover="cambiarMayusculas(this)" onmouseout="regresarMinusculas(this)">se cambia a mayusculas cuando pasas el mouse y regresa a minusculas cuando quitas el mouse sobre la palabra</p>
+
+    <h3 id="titulo3" onmouseout="cambiarAzul(this)" onmouseover="fondo(this)">Evento onmouseout</h3>
 
 
 
@@ -250,9 +258,29 @@
 
         };
 
-        
+        //Manejo onmouseout y onmouseover
+        //Este es evento onmouseover:Funciona para cuando pasa el mouse sobre el elemento html cambia de color o cualquier otro estilo se pueda agregar.
+        function cambiarRojo(titulo2){
+            titulo2.style.color = "red";
+        }
 
+        function cambiarMayusculas(titulo2){
+            titulo2.style.textTransform = "uppercase";
+        }
 
+        //Este es evento onmouseover:Funciona para cuando sale el mouse sobre el elemento html cambia de color o cualquier otro estilo se pueda agregar.
+        function regresarMinusculas(titulo2){
+            titulo2.style.textTransform = "lowercase";
+        }
+        function cambiarAzul(titulo3){
+            titulo3.style.color = "blue";
+        }
+        // function subrayar(titulo3){
+        //     titulo3.style.textDecoration = "underline";
+        // }
+        function fondo(titulo3){
+            titulo3.style.backgroundColor = "yellow";
+        }
 
 
 
