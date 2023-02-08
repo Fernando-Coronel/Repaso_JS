@@ -33,6 +33,7 @@
     <p class="rojo">Rojo 1</p>
     <p class="rojo">Rojo 2</p>
     <hr>
+    <br>
     <!-- Formulario con JavaScript -->
     <form id="formulario">
         <label name="nombre">
@@ -43,13 +44,16 @@
             Apellido:
             <input type="text" name="apellido" value="Coronel">
         </label>
-    </form><br>
+    </form>
+    <br>
     <button onclick="mostrarValores()">Mostrar</button>
     <div id="form-value"></div>
+    <br><br>
     <hr>
     <!-- Uso del metodo document.write() -->
     <h2>Manejo de document.write</h2>
     <button onclick="mostrar2()">Mostrar</button>
+    <br><br>
     <hr>
     <!-- Cambio de contenido en el DOM -->
     <h2 id="cambioValor">Cambio de valores desde JavaScript</h2>
@@ -59,6 +63,7 @@
     <img  id="imagen" src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="logo-JS"><br>
     <button onclick="cambiarAtributo()">Cambiar atributo imagen</button>
     <button onclick="cambiarAtributo2()">Cambiar atributo imagen</button>
+    <br><br>
     <hr>
     <!-- Cambio de estilos CSS con JavaScript -->
     <h2 id="cambiarEstilo">Cambiar estilo CSS</h2>
@@ -66,26 +71,27 @@
     <button onclick="cambiarEstilo2()">Cambiar fuente</button>
     <button onclick="cambiarEstilo3()">Cambiar a mayusculas</button>
     <button onclick="cambiarEstilo4()">Centrar texto</button>
-    <button onclick="cambiarEstilo5()">Subrayar texto</button><br><br>
+    <button onclick="cambiarEstilo5()">Subrayar texto</button>
+    <br><br>
     <hr>
-
+    
     <!-- Manejo de eventos con DOM HTML y JavaScript -->
     <!-- <h3 onclick="this.innerHTML = 'Evento onclick'">Manejo de eventos</h3> -->
     <h3 onclick="cambiarTexto(this)">Cambiar texto haciendo clic aquí</h3>
-    <br>
     <hr>
+
     <!-- Asociar eventos desde JavaScript -->
-    <h3 id="eventoJavascript">Asociar evento desde JavaScript</h3>
+    <h3 id="eventoJavascript">Asociar evento desde JavaScript, haga clicl aquí</h3>
     <div id="eventoJs"></div>
-    <br>
     <hr>
 
     <!-- Manejo de evento onload con JavaScript-->
     <div id="mostrarCookie"></div>
     <br>
-    <hr>
+
 
     <!-- Manejo de evento onchange con JavaScript -->
+    <br>
     <label >Nombre:
         <input type="text" id="nombre2" onchange="convertir(this)">
     </label>
@@ -95,9 +101,15 @@
 
     <!-- Manejo onmouseout y onmouseover -->
     <h3 id="titulo2" onmouseover="cambiarRojo(this)" onmouseout="cambiarAzul(this)">Evento onmouseover</h3>
-    <p id="titulo2" onmouseover="cambiarMayusculas(this)" onmouseout="regresarMinusculas(this)">se cambia a mayusculas cuando pasas el mouse y regresa a minusculas cuando quitas el mouse sobre la palabra</p>
+    <p id="titulo2" onmouseover="cambiarMayusculas(this)" onmouseout="regresarMinusculas(this)">se cambia a mayusculas cuando pasas el mouse y regresa a minusculas cuando quitas el mouse sobre la palabra.</p>
 
-    <h3 id="titulo3" onmouseout="cambiarAzul(this)" onmouseover="fondo(this)">Evento onmouseout</h3>
+    <h3 id="titulo3" onmouseout="cambiarAzul(this)" onmouseover="fondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout</h3>
+    
+    <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
+    <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
+    <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
+    <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
+    <hr>
 
 
 
@@ -281,7 +293,13 @@
         function fondo(titulo3){
             titulo3.style.backgroundColor = "yellow";
         }
+        function otroFondo(titulo4){
+            titulo4.style.backgroundColor = "green";
+        }
 
+        function quitarFondo(titulo4){
+            titulo4.style.backgroundColor = "white";
+        }
 
 
     </script>
