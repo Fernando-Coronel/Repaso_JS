@@ -15,7 +15,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="entrar()">
     <!-- Formas de acceder a los elementos del documento HTML desde javascript. -->
     <h1 id="title">DOM - JavaScript</h1>
     <p id="parrafo">Parrafo</p>
@@ -69,13 +69,26 @@
     <hr>
 
     <!-- Manejo de eventos con DOM HTML y JavaScript -->
+    <!-- <h3 onclick="this.innerHTML = 'Evento onclick'">Manejo de eventos</h3> -->
+    <h3 onclick="cambiarTexto(this)">Cambiar texto haciendo clic aquí</h3>
+    <br>
+    <hr>
+    <!-- Asociar eventos desde JavaScript -->
+    <h3 id="eventoJavascript">Asociar evento desde JavaScript</h3>
+    <div id="eventoJs"></div>
+    <br>
+    <hr>
 
+    <!-- Manejo de evento onload con JavaScript-->
+    <div id="mostrarCookie"></div>
+    <br>
+    <hr>
 
-
-
-
-
-
+    <!-- Manejo de evento onchange con JavaScript -->
+    <label >Nombre:
+        <input type="text" id="nombre2" onchange="convertir(this)">
+    </label>
+    <div id="muestraValor"></div>
 
 
 
@@ -198,6 +211,48 @@
         }
 
         //Manejo de eventos con DOM HTML y JavaScript 
+        function cambiarTexto(titulo){
+            console.log(titulo);
+            console.log(titulo.innerHTML);//Imprime el contenido antes del evento.
+            titulo.innerHTML = "Evento onclick";
+            console.log(titulo.innerHTML);//Imprime el contenido después del evento.
+        };
+
+        //Asociar eventos desde JavaScript
+        let tituloH3 = document.getElementById("eventoJavascript").onclick = cambiarEvento;//Aqui en lugar de asignarle un valor se le asigna una referencia de una funcion.
+
+        function cambiarEvento(){//A esta funcion se le llama callback.
+             document.getElementById("eventoJavascript").innerHTML = "Evento asociado desde JavaScript";
+            document.getElementById("eventoJs").innerHTML = "Texto agregado a un div vacío";
+        };
+
+        //Manejo de evento onload:Este metodo se ejecuta cuando termina de cargar la pagina web.
+        function entrar(){
+            //alert("Entrando a la página web");
+            let texto = "";
+            if(navigator.cookieEnabled){
+                texto = "Las cookies estan habilitadas";
+            }else{
+                texto = "Las cookies no estan habilitadas";
+            }
+            document.getElementById("mostrarCookie").innerHTML = texto;
+        };
+
+        //Manejo de evento onchange: se utiliza cuando se modifican los valores de un campo de texto o los elementos de un formulario.
+        function convertir(nombreInput){
+            console.log(nombreInput.value);//Imprime el valor antes del evento onchange.
+            nombreInput.value = nombreInput.value.toUpperCase();
+            console.log(nombreInput.value);//Imprime el valor ya convertido en este ejemplo a mayusculas por un metodo string upperCase.
+            // nombreInput.value = nombreInput.value.length;
+            // console.log(nombreInput.value);//Prueba de un metodo string
+            
+            document.getElementById("muestraValor").innerHTML += " " + nombreInput.value;//Prueba para mostrarlo en un div vacío y repasar lo aprendido.
+
+        };
+
+        
+
+
 
 
 
