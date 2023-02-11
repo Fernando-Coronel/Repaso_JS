@@ -16,25 +16,32 @@
     </style>
 </head>
 <body>
-<!-- <body onload="entrar()"> -->
-    <!-- Formas de acceder a los elementos del documento HTML desde javascript. -->
-    <h1 id="title">DOM - JavaScript</h1>
+    <h1>Manejo de DOM con JavaScript</h1>
+    <hr>
+    <!-- <body onload="entrar()"> -->
+        <!-- Formas de acceder a los elementos del documento HTML desde javascript. -->
+    <h2>Formas de acceder a los elementos HTML con JavaScript</h2>    
+    <h2 id="title">DOM - JavaScript</h2>
     <p id="parrafo">Parrafo</p>
     <hr>
     <!-- Metodo getElementsByTagName -->
+    <h2>Metodo getElementsByTagName</h2>
     <p id="parrafo1">Parrafo 1</p>
     <p id="parrafo2">Parrafo 2</p>
     <hr>
     <!-- Metodo getElementsByClassName -->
+    <h2>Metodo getElementsByClassName</h2>
     <p class="azul">Azul 1</p>
     <p class="azul">Azul 2</p>
     <hr>
     <!-- Metodo querySelectorAll -->
+    <h2>Metodo querySelectorAll</h2>
     <p class="rojo">Rojo 1</p>
     <p class="rojo">Rojo 2</p>
     <hr>
     <br>
     <!-- Formulario con JavaScript -->
+    <h2>Formulario con JavaScript</h2>
     <form id="formulario">
         <label name="nombre">
             Nombre:
@@ -51,6 +58,7 @@
     <br><br>
     <hr>
     <!-- Uso del metodo document.write() -->
+    <h2>Uso del metodo document.write()</h2>
     <h2>Manejo de document.write</h2>
     <button onclick="mostrar2()">Mostrar</button>
     <br><br>
@@ -60,12 +68,14 @@
     <button onclick="cambiarValor()">Cambiar valor</button><br><br>
     <hr>
     <!-- Cambio de valor de los atributos en el DOM HTML -->
+    <h2>Cambio de valor a los atributos en el DOM HTML con JavaScript</h2>
     <img  id="imagen" src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="logo-JS"><br>
     <button onclick="cambiarAtributo()">Cambiar atributo imagen</button>
     <button onclick="cambiarAtributo2()">Cambiar atributo imagen</button>
     <br><br>
     <hr>
     <!-- Cambio de estilos CSS con JavaScript -->
+    <h2>Cambio de estilos con JavaScript</h2>
     <h2 id="cambiarEstilo">Cambiar estilo CSS</h2>
     <button onclick="cambiarEstilo()">Cambiar color</button>
     <button onclick="cambiarEstilo2()">Cambiar fuente</button>
@@ -74,23 +84,23 @@
     <button onclick="cambiarEstilo5()">Subrayar texto</button>
     <br><br>
     <hr>
-    
     <!-- Manejo de eventos con DOM HTML y JavaScript -->
+    <h2>Manejo de eventos con DOM HTML y JavaScript</h2>
     <!-- <h3 onclick="this.innerHTML = 'Evento onclick'">Manejo de eventos</h3> -->
     <h3 onclick="cambiarTexto(this)">Cambiar texto haciendo clic aquí</h3>
     <hr>
-
     <!-- Asociar eventos desde JavaScript -->
-    <h3 id="eventoJavascript">Asociar evento desde JavaScript, haga clicl aquí</h3>
+    <h2>Asociar eventos desde JavaScript</h2>
+    <h3 id="eventoJavascript">Asociar evento desde JavaScript, haga click aquí</h3>
     <div id="eventoJs"></div>
     <hr>
-
     <!-- Manejo de evento onload con JavaScript-->
+    <h2>Manejo de evento onload con JavaScript</h2>
     <div id="mostrarCookie"></div>
     <br>
-
-
+    <hr>
     <!-- Manejo de evento onchange con JavaScript -->
+    <h2>Manejo de evnto onchange con JavaScript</h2>
     <br>
     <label >Nombre:
         <input type="text" id="nombre2" onchange="convertir(this)">
@@ -98,8 +108,8 @@
     <div id="muestraValor"></div>
     <br>
     <hr>
-
     <!-- Manejo onmouseout y onmouseover -->
+    <h2>Manejo de eventos onmouseout y onmouseover</h2>
     <h3 id="titulo2" onmouseover="cambiarRojo(this)" onmouseout="cambiarAzul(this)">Evento onmouseover</h3>
     <p id="titulo2" onmouseover="cambiarMayusculas(this)" onmouseout="regresarMinusculas(this)">se cambia a mayusculas cuando pasas el mouse y regresa a minusculas cuando quitas el mouse sobre la palabra.</p>
 
@@ -110,10 +120,36 @@
     <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
     <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
     <hr>
-
-    <!-- Manejo onmouseup y onmouse down -->
+    <!-- Manejo onmouseup y onmousedown -->
+    <h2>Manejo de eventos onmouseup y onmousedown</h2>
     <h3 id="titulo5" onmouseup="verde(this)" onmousedown="amarillo(this)">Evento onmouseup y onmousedown</h3>
-
+    <hr>
+    <!-- Manejo de evento onfocus y onblur -->
+    <h2>Manejo de eventos onfocus y onblur</h2>
+    Nombre: <input type="text" onfocus="cambiarFondo(this)" onblur="regresarFondo(this)">
+    Apellido: <input type="text" onfocus="cambiarFondo(this)" onblur="regresarFondo(this)">
+    <br>
+    <hr>
+    <!-- Manejor de metodo addEventListener -->
+    <h2>Manejo de metodo addEvenlistener</h2>
+    Nombre: <input type="text" id="name2">
+    Apellido: <input type="text" id="apellido2">
+    <!-- repaso addeventlistener con funcion flecha -->
+    <p id="palabra">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maiores quidem at labore commodi tempore totam qui saepe architecto est dolore ullam, quasi molestias atque illo autem omnis earum animi.</p>
+    <br>
+    <hr>            
+    <!-- Manejo de metodo addEventListener con funciones flecha-->
+    <h2>Manejo de metodo addEvenlistener con funcion flecha</h2>
+    Nombre: <input type="text" id="name3">
+    Apellido: <input type="text" id="apellido3">
+    <br>
+    <hr>
+    <!-- Delegación de eventos o useCapture con JavaScript -->
+    <h2>Delegación de eventos o useCapture con JavaScript</h2>
+    <form id="forma">
+        Nombre: <input type="text" id="name4">
+        Apellido: <input type="text" id="apellido4">
+    </form>
     <script>
         //Formas de acceder a los elementos del documento HTML desde javascript.
         let otroTitulo = "Titulo desde JavaScript";
@@ -312,21 +348,65 @@
             titulo5.style.color = "yellow";
         }
 
-        //Majeo de evento onfocus y onblur
+        //Manejo de evento onfocus y onblur
+        //El evento onfocus cuando damos click en una caja de texto cambia el color.
+        function cambiarFondo(elementoInput){
+            elementoInput.style.background = "yellow";
+        }
+
+        //Evento onblur: cuando sale de la caja de texto aplica otro evento en este caso cambia a otro color.
+        function regresarFondo(elementoInput){
+            elementoInput.style.background = "white";
+        }
+
+        //Manejo de metodo addEventListener: se utiliza para agregar uno o más eventos a un elemento sin necesidad de poner el metodo directamente en la etiqueta HTML solo se agrega la referencia y ya no lleva la primer palabra on, ejemplo en lugar onfocus ahora es focus.
+        document.getElementById("name2").addEventListener("focus", cambiarFondo);
+        document.getElementById("name2").addEventListener("blur",regresarFondo);
+
+        document.getElementById("apellido2").addEventListener("focus", cambiarFondo);
+        document.getElementById("apellido2").addEventListener("blur", regresarFondo);
+
+        function cambiarFondo(evento){
+            let componente = evento.target;
+            componente.style.background = "yellow";
+        }
+        function regresarFondo(evento){
+            evento.target.style.background = "white";
+        }
+        //Repaso de funciones flecha y agregando addEvenlistener
+        document.getElementById("palabra").addEventListener("mouseover", (evento) => {
+            evento.target.style.color = "green";
+        });
+        document.getElementById("palabra").addEventListener("mouseout", (evento) => {
+            evento.target.style.color = "red";
+        });
+
+        //Manejo de metodo addEvenlistener con funciones flecha
+        //Nota:cuando se utiliza la funcion flecha no se puede reutilizar ya que es una funcion anonima.
+        document.getElementById("name3").addEventListener("focus", (evento) => {
+            evento.target.style.background = "pink";
+        });
+        document.getElementById("name3").addEventListener("blur",  (evento) => {
+            evento.target.style.background = "white";
+        });
+
+        document.getElementById("apellido3").addEventListener("focus", (evento) => {
+            evento.target.style.background = "pink";
+        });
+
+        document.getElementById("apellido3").addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        });
 
 
-
-
-
-
-
-
-
-
-
-        
-
-
+        //Delegación de eventos con JavaScript o useCapture: en este ejemplo aplica el estilo a todos los elementos que estan dentro del formulario pero para que se puedan aplicar al final de la funcion deben llevar la palabra true para que se apliquen los cambios ya que por default tiene el valor false.
+        const forma = document.getElementById("forma");
+        forma.addEventListener("focus", (evento) => {
+            evento.target.style.background = "orange";
+        },true);
+        forma.addEventListener("blur", (evento) => {
+            evento.target.style.background = "white";
+        },true);
     </script>
 </body>
 </html>
