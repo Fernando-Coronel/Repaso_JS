@@ -111,8 +111,8 @@
     <h3 id="titulo4" onmouseover="otroFondo(this)" onmouseout="quitarFondo(this)">Evento onmouseout y onmouseover</h3>
     <hr>
 
-
-
+    <!-- Manejo onmouseup y onmouse down -->
+    <h3 id="titulo5" onmouseup="verde(this)" onmousedown="amarillo(this)">Evento onmouseup y onmousedown</h3>
 
     <script>
         //Formas de acceder a los elementos del documento HTML desde javascript.
@@ -300,6 +300,31 @@
         function quitarFondo(titulo4){
             titulo4.style.backgroundColor = "white";
         }
+
+        //Manejo evento onmouseup y onmousedown
+        //evento onmousedown: cuando se hace click sobre el elemento sin dejar de apretar el click cambia de color y si se suelta pasa a realizar el evento onmouseup
+        function verde(titulo5){
+            titulo5.style.color = "green";
+        }
+
+        //evento onmouseup
+        function amarillo(titulo5){
+            titulo5.style.color = "yellow";
+        }
+
+        //Majeo de evento onfocus y onblur
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
     </script>
