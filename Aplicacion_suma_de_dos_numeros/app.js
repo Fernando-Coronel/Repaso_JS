@@ -1,5 +1,5 @@
 
-function sumar(){
+function suma(){
     const formulario = document.getElementById("formulario");
     let numero1 = formulario["numero1"];
     let numero2 = formulario["numero2"];
@@ -12,3 +12,6 @@ function sumar(){
     document.getElementById("resultado").innerHTML = `Resultado: ${resultado}`;
     console.log(`Resultado: ${resultado}`);
 }
+
+let botonSumar = document.getElementById("sumar");
+botonSumar.addEventListener("click", suma);
