@@ -411,7 +411,7 @@ const DesarrolladorWebJr = {
     email: "fernando.coronel.dev@gmail.com",
     tel: "55 85512942",
     softskills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    perfilCompleto: function(){
+    perfilCompleto(){
       return  `Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años, actualmente estoy aprendiendo de forma autodidacta como desarrollador Front-End y eh adquirido softskills básicos como ${this.softskills} y una vez que tenga bien reforzados esos skills seguire con framework de React para aprender a crear Aplicaciones web que es una de mis grandes metas, dejo por aqui mi correo ${this.email} y mi número ${this.tel}.`
     }
 }
