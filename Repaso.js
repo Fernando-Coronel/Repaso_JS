@@ -1,18 +1,18 @@
 /*********************************CONSUMIR API Fake store api***********************************************/
-let api = 'https://fakestoreapi.com/products?limit=5'
-fetch(api)
-    .then( response => response.json())
-    .then( data => mostrarData(data))
-    .catch(err => console.log("error", err))
+// let api = 'https://fakestoreapi.com/products?limit=5'
+// fetch(api)
+//     .then( response => response.json())
+//     .then( data => mostrarData(data))
+//     .catch(err => console.log("error", err))
 
-const mostrarData = (data) => {
-    console.log(data[0].id);
-    console.log(data[0].title);
-    console.log(data[0].price);
-    console.log(data[0].category);
-    console.log(data[0].description);
-    console.log(data[0].image);
-}
+// const mostrarData = (data) => {
+//     console.log(data[0].id);
+//     console.log(data[0].title);
+//     console.log(data[0].price);
+//     console.log(data[0].category);
+//     console.log(data[0].description);
+//     console.log(data[0].image);
+// }
 
 /*********************************TYPEOF(Para saber el tipo de dato de una variable)***********************************************/
 
@@ -415,3 +415,141 @@ const DesarrolladorWebJr = {
       return  `Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años, actualmente estoy aprendiendo de forma autodidacta como desarrollador Front-End y eh adquirido softskills básicos como ${this.softskills} y una vez que tenga bien reforzados esos skills seguire con framework de React para aprender a crear Aplicaciones web que es una de mis grandes metas, dejo por aqui mi correo ${this.email} y mi número ${this.tel}.`
     }
 }
+
+// Ejercicios de logica de curso JhonMircha
+//Funcion que cuente los caracteres de un texto.
+function contarCaracteres(cadena =""){
+    if(!cadena){
+        console.error("No ingresaste nada");
+    }else{
+        console.log(`El texto "${cadena}" tiene ${cadena.length} caracteres`)
+    }
+}
+
+contarCaracteres();
+contarCaracteres("Hola mundo");
+
+const contarCaracteres1 = (cadena1 ="") =>{
+    (!cadena1) 
+    ? console.error("No ingresaste nada man") 
+    : console.log(`La cadena "${cadena1}" tiene ${cadena1.length} caracteres`);
+}
+
+contarCaracteres1();
+contarCaracteres1("Hola Mundo");
+
+//Funcion para recortar un texto.
+const recortarTexto = (cadena2 ="", longitud=undefined) =>{
+    (!cadena2)
+        ? console.error("No ingresaste nada")
+        : (longitud === undefined)
+            ? console.error("No ingresaste la longitud para recortar el texto")
+            : console.log(cadena2.slice(0, longitud)) 
+}
+
+recortarTexto();
+recortarTexto("",5);
+recortarTexto("Hola mundo");
+recortarTexto("Hola mundo JavaScript", 7);
+recortarTexto("Hola mundo JavaScript", 15);
+
+//Funcion para que devuelva un array separados por un caracter.
+
+const cadena3 = (cadena ="", separador =undefined) => {
+    (!cadena)
+    ?console.log("No ingresaste una cadena")
+    :(separador === undefined)
+        ? console.log("No ingresaste el caracter separador")
+        : console.log(cadena.split(separador));
+}
+
+cadena3();
+cadena3("", " - ");
+cadena3("Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur interdum lacinia dui, nec semper augue suscipit vel",",");
+cadena3("");
+cadena3("Hola mundo");
+cadena3("","-");
+
+//Funcion repetir texto n veces
+const repetirTexto = (texto = "", veces = undefined) => {
+    if(!texto) return console.log("No ingresaste un texto");
+    if(veces === undefined) return console.log("No ingresaste el numero de veces para repetir el texto");
+    if(veces === 0)return console.log("El numero no puede ser 0");
+    if(Math.sign(veces) === -1) return console.log("El numero de veces no puede ser negativo");
+
+    for(let i = 1; i <= veces; i++){
+        console.log(`${texto}, ${i}`);
+    }
+}
+
+repetirTexto("Hola mundo", 2);
+repetirTexto("Hola mundo", -2);
+repetirTexto("", -2);
+repetirTexto("Hola mundo", 0);
+repetirTexto("Hola mundo", );
+
+//Funcion que devuelva un texto al reves
+ const textoAlReves = (texto = "") => {
+    if(texto === ""){
+        console.log("No ingresaste un texto");
+    }else{
+        console.log(texto.split("").reverse().join(""))
+    }
+}
+    
+textoAlReves();
+textoAlReves("Hola we");
+textoAlReves("anita lava la tina");
+
+//Funcion para contar el numero de veces que se repite una palabra
+
+const textoEnCadena = (cadena = "", texto = "") =>{
+    if(cadena === "") return console.log("No ingresaste el texto")
+    if(texto === "") return console.log("No ingresaste la palabra a buscar");
+
+    let i = 0;
+    contador = 0;
+
+    while(i !== -1){
+        i = cadena.indexOf(texto, i)
+        if(i !== -1){
+            i++;
+            contador++;
+        }
+    }
+
+    return console.log(`La palabra ${texto} se repite ${contador} veces.`)
+}
+
+textoEnCadena();
+textoEnCadena("");
+textoEnCadena("", "");
+textoEnCadena("", "hola");
+textoEnCadena("hola mundo", "");
+textoEnCadena("hola mundo mundo mundo", "mundo");
+
+
+//Funcion que determine si una palabra es un palindromo
+
+const palindromo = (frase = "") => {
+    if(frase === "") return console.log("No ingresaste una frase");
+    frase.toLocaleLowerCase();
+
+    let fraseAlReves = frase.split("").reverse().join("");
+
+    return (frase === fraseAlReves)
+    ? console.log(`La frase "${frase}" es palindroma y asi se ve al reves "${fraseAlReves}."`)
+    : console.log(`La frase "${frase}" no es palindroma y asi se ve al reves "${fraseAlReves}."`)
+}
+
+palindromo("anitalavalatina")
+
+
+
+
+
+
+
+
+
+
