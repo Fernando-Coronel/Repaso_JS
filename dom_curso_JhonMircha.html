@@ -11,13 +11,45 @@
             --yellow-color:#f7df1e;
             --dark-color:#222;
         }
+
+        .card{
+            display: inline-block;
+            background-color: var(--dark-color);
+            color: var(--yellow-color);
+        }
+        
+        .card figcaption{
+            padding: 1rem;
+        }
+
+        .rotate-45{
+            transform: rotate(45deg);
+        }
+
+        .rotate-135{
+            transform: rotate(135deg);
+        }
+
+        .opacity-80{
+            opacity: .8;
+        }
+
+        .sepia{
+            filter: sepia(1);
+        }
+
+        .cards{
+            border: thin solid var(--dark-color);
+            padding: 1rem;
+        }
+
     </style>
 </head>
 <body>
     <!-- Curso de logica del DOM de curso JhonMircha -->
     <h2>Curso de logica del DOM de curso JhonMircha</h2>
     <hr>
-    <h2>--------- Nodos, elementos y selectores----------------</h2>
+    <h2>--------- Nodos, elementos y selectores ----------------</h2>
     <nav id="menu">
         <li><a href="#">seccion 1</a></li>
         <li><a href="#">seccion 2</a></li>
@@ -55,11 +87,19 @@
     
     <a href="dom_curso_JhonMircha.html" class="link-dom2" style="background-color: #f7df1e; color: #222;">DOM</a>
 
-
-
-
-
-
+    <!-- Texto y HTML -->
+    <h2>---------------- Texto y HTML --------------------</h2>
+    <p id="que-es">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, quaerat optio adipisci alias, id ipsam illo quod voluptatibus sed ab laborum facilis quidem blanditiis? Unde consequatur ad quas pariatur repellat!</p>
+    
+    
+    <h2>---------------- Templates HTML --------------------</h2>
+    
+    <template id="template-card">
+        <figure class="card">
+            <img>
+            <figcaption></figcaption>
+        </figure>
+    </template>
 
 
 
