@@ -287,11 +287,39 @@ cardContent.forEach(el => {
     $template.querySelector("img").setAttribute("src", el.img);
     $template.querySelector("img").setAttribute("alt", el.title);
     $template.querySelector("figcaption").textContent = el.title;
-
+    
     let $clone = document.importNode($template, true);
     $fragment2.appendChild($clone);
 });
 
 $cards3.appendChild($fragment2);
+
+console.log($cards3.appendChild($fragment2));
+
+console.log("--------------> Manejo de elementos(event Handler) <--------------"); 
+
+function holaMundo(e){
+    alert("Hola Mundo");
+    console.log(event);
+}
+
+let $eventoSemantico = document.getElementById("evento-semantico");
+$eventoSemantico.onclick = holaMundo;
+
+let $eventoMultiple = document.getElementById("evento-multiple");
+
+$eventoSemantico.onclick = function(e){
+    alert("Evento semantico");
+    console.log(e);
+    console.log(event);
+}
+
+$eventoMultiple.addEventListener('click', (e) => {
+    alert("evento multiple");
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(event);
+})
 
 // Ejercicios de logica del DOM de curso JhonMircha.
