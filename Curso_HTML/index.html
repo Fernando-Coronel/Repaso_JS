@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HMTL - Global Metoring</title>
+    <style>
+        hr{
+            color: lightseagreen;
+            border: 3px solid;
+        }
+
+        .h2-{
+            color: #00ff44;
+        }
+
+        .parrafo{
+            color: #f4f1de;
+            background-color: #22223b;
+            padding: 15px;
+            border: 10px solid #4a4e69;
+            /* margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px; */
+            margin: auto 50px;
+            text-align: center;
+        }
+
+        .ancla:link{
+            color: deepskyblue;
+            text-decoration: none;
+        }
+
+        .ancla:visited{
+            color: #ffee00;
+            text-decoration: none;
+        }
+
+        .ancla:hover{
+            color: #ffa600;
+            text-decoration: underline;
+        }
+
+        .ancla:active{
+            color: #c300ff;
+        }
+
+        .logo-github{
+            background-color: rgba(14, 78, 173, 0.699); 
+            width: 175px;
+        }
+
+        .link-btn:link, .link:visited{
+            background-color: #22223b;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .link-btn:hover, .link-btn:active{
+            background-color: #4a4e69;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Titulos -->
+    <h2>Titulos</h2>
+
+    <h1>titulo h1</h1>
+    <h2>titulo h2</h2>
+    <h3>titulo h3</h3>
+    <h4>titulo h4</h4>
+    <h5>titulo h5</h5>
+    <h6>titulo h6</h6>
+    <hr>
+    <!-- Parrafos -->
+    <h2>Parrafos</h2>
+
+    <p>Primer linea del parrafo<br />Segunda linea del parrafo</p>
+    <hr>
+    <p>Segundo parrafo</p>
+
+    <!-- Links -->
+    <h2>Links</h2>
+    
+    <a href="https://github.com" target="_blank">Github</a>
+    <a href="pagina1.html">Ir a pagina 1</a>
+
+    <!-- Imganes -->
+    <h2>Imagenes</h2>
+
+    <img src="imagenes/html5.png" alt="logo html5" width="100px">
+    <img src="imagenes/css3.png" alt="logo css3" width="100px">
+    <img src="imagenes/javascript.png" alt="logo javascript" width="100px">
+    <hr>
+
+    <!-- Manejo de atributos -->
+    <h2 style="border: thin solid red;">Manejo de atributos</h2>
+    <img src="imagenes/html5.png" alt="logo html5" width="100px" title="logo html5">
+    <img src="imagenes/css3.png" alt="logo css3" width="100px" title="logo css3"/>
+    <img src="imagenes/javascript.png" alt="logo javascript" width="100px" title="logo javascript">
+    <p title="parrafo" style="background-color: chartreuse;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum qui ex molestias velit perferendis possimus, consequuntur nostrum consectetur asperiores ab quia minus aperiam quaerat amet aliquid, saepe, tempora necessitatibus?</p>
+    <hr>
+
+    <!-- Estilos CSS dentro de las etiquetas html -->
+    <h2>Estilos de CSS como atributos</h2>
+
+    <p style="text-align:justify; font-family: sans-serif; color: dodgerblue;
+    font-weight: 700; background-color: yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor possimus exercitationem ipsum impedit totam facere? Voluptatum porro, veniam laudantium expedita odio doloremque nemo laborum soluta. Accusamus perferendis fugiat quas temporibus!</p>
+    <h2 style="background-color: black; color: aquamarine;">Otro estilo</h2>
+    <hr>
+
+    <!-- Formato de texto -->
+    <h2>Formato de texto</h2>
+
+    <p>Lorem ipsum <b>dolor sit</b>, amet consectetur adipisicing elit. Sint odio <i>accusamus delectus suscipit</i> eaque esse <strong>incidunt</strong> , sapiente expedita <mark>enim obcaecati</mark> quos fuga ea <small>molestiae</small> itaque perferendis <em>praesentium</em>commodi non nulla?</p>
+    <hr>
+
+    <!-- Referencias de caracteres -->
+    <h2>Referencias de caracteres</h2>
+    <p><code>Escribe codigo</code></p>
+    <p>Simbolo de exclamacion &excl;</p>
+    <p>Simbolo de dolar &dollar;</p>
+    <p>Simbolo de copyright &COPY;</p>
+    <p>Simbolo de ampersand &amp;</p>
+    <p>&lt; Simbolo de menor que</p>
+    <p>&aacute;rbol</p>
+    <p>&Aacute;rbol</p>
+    <p>&nbsp;texto con espacio</p>
+    <hr>
+
+    <!-- Ejercicio de links -->
+    <h2>Ejercico de links</h2>
+    <a href="index.html">Inicio</a> | <a href="contacto.html">Contacto</a> | <a href="acercaDe.html">Acerca de</a> 
+    <hr>
+
+    <!-- Link para enviar un email -->
+    <h2>Link para enviar un email</h2>
+    <a href="mailto:fernando.coronel.dev@gmail.com?subject=Contacto&body=Prueba Email">Correo: Fernando Coronel</a>
+    <hr>
+
+    <!-- Manejo de colores en CSS y HTML -->
+    <h2>Manejo de colores en CSS y HTML</h2>
+
+    <p style="color: IndianRed;">Color por nombre</p>
+    <p style="color: rgb(61, 164, 179);">Color por RGB</p>
+    <p style="color: rgba(61, 69, 179, 0.5);">Color por RGBA con transparencia</p>
+    <p style="color:hsl(101, 66%, 47%)">Color por HSL(se manejo por porcentajes)</p>
+    <p style="color: hsla(101, 62%, 27%, .5);">Color por HLSA con transparencia(se manejo por porcentajes)</p>
+    <p style="color:#33bfc4">Color por hexadecimal</p>
+    <p style="color:#fff; background-color: #000;">Color por hexadecimal</p>
+    <hr>
+
+    <!-- Introduccion a CSS -->
+    <h2>Color aplicado desde la etiqueta head</h2>
+
+    <h2 class="h2-">Color aplicado desde style en head</h2>
+    <hr>
+    
+    <!-- Box model -->
+    <h2>Box model</h2>
+
+    <p class="parrafo">Modelo caja</p>
+    <p class="parrafo">Modelo caja.</p>
+    <hr>
+
+    <!-- Estados y colores de los links en HTML y CSS -->
+    <h2>Estados y colores de los links en HTML y CSS</h2>
+
+    <a href="pagina1.html" class="ancla">Ir a contenido</a>
+    <hr>
+
+    <!-- Links con imagenes -->
+    <h2>Link con imagenes</h2>
+
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/logo-github.png" alt="logo-github" title="logo github" class="logo-github">
+    </a>
+    <hr>
+
+    <!-- link como botones -->
+    <h2>Links como botones</h2>
+
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-btn">Link como botón</a>
+    <hr>
+</body>
+</html>

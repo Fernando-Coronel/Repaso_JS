@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        ul{
+            /* list-style: disc; */
+            /* list-style: circle; */
+            /* list-style: square; */
+        }
+
+        h2{
+            color: #1d4264;
+        }
+
+        .menu{
+            list-style: none;
+            background-color: #3e6f9c;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li{
+            float: left;
+        }
+
+        .menu li a{
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .menu li a:hover{
+            background-color: #1d4264;
+        }
+
+        .lista-ordenada{
+            list-style: none;
+            counter-reset: contador;
+        }
+
+        .lista-ordenada li{
+            counter-increment: contador;
+        }
+
+        .lista-ordenada li::before{
+            content: 'Curso ' counter(contador) ') ';
+            color: #1d4264;
+        }
+
+        .lista-ordenada li::after{
+            content: '.';
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Listas no ordenadas</h2>
+
+    <ul>
+        <li>Fernando
+            <ul>
+                <li>Tel: 55-12345678</li>
+                <li>Mail: fernando@mail.com</li>
+            </ul>
+        </li>
+        <li>Elena</li>
+        <li>Fatima</li>
+        <li>Leonel</li>
+    </ul>
+    <hr>
+
+    <!-- Menu de navegacion con listas -->
+    <h2>Menu de navegacion con listas</h2>
+
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Acerca de</a></li>
+    </ul>    
+    <h2>Inicio</h2>
+    <hr>
+
+    <!-- Listas ordenadas -->
+    <h2>Listas ordenadas</h2>
+
+    <!-- <ol type="I">
+        <li>Fernando</li>
+        <li>Elena</li>
+        <li>Fatima</li>
+        <li>Leonel</li>
+    </ol> -->
+    <ol class="lista-ordenada">
+        <li>Fernando</li>
+        <li>Elena</li>
+        <li>Fatima</li>
+        <li>Leonel</li>
+        <li>Fernando</li>
+        <li>Elena</li>
+        <li>Fatima</li>
+        <li>Leonel</li>
+    </ol>
+    <hr>
+
+    <!-- Listas de descripcion -->
+    <h2>Listas de descripcion</h2>
+
+    <dl>
+        <dt>Java:</dt>
+        <dd>Creador: James Gosling</dd>
+        <dt>Python:</dt>
+        <dd>Creador: Guido van Rossum</dd>
+        <dt>JavaScript:</dt>
+        <dd>Creador: Brendan Eich</dd>        
+    </dl>
+
+</body>
+</html>
