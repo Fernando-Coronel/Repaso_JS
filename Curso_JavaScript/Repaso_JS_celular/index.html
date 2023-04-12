@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso JS del celular</title>
+    <style>
+        .uppercase{
+            text-transform: uppercase;
+        }
+
+        #agregar{
+            border: 2px solid dodgerblue;
+            color: dodgerblue;
+            background-color: white;
+            padding: 8px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        #agregar:hover{
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+        }
+
+        input{
+            border: 2px solid dodgerblue;
+            color: black;
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        #dni{
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Repaso de JS que practico en el celular</h1>
+    <!-- Repaso -->
+
+    <p id="palabra">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit cum doloremque fugit quibusdam eligendi. Ex tempora accusamus quod placeat qui magni. Atque dignissimos quidem, quia incidunt possimus eaque quibusdam odit?</p>
+
+    <p id="palabra2">Fernando</p>
+    <p id="palabra3">Fernando</p>
+    <div id="carrito1"></div><br><br>
+    <div id="carrito2"></div><br><br>
+    <div id="carrito3"></div><br><br>
+
+    <!-- Agregar datos de un input a una tabla -->
+    <div class="contenedor">
+        <div class="formulario">
+            <h2>Formulario</h2>
+            <input type="text" id="name" placeholder="Nombre"><br><br>
+            <input type="text" id="lastName" placeholder="Apellido"><br><br>
+            <input type="number" id="age" placeholder="Edad"><br><br>
+            <input type="text" id="dni" placeholder="CURP"><br><br>
+            <input type="text" id="profesion" placeholder="Profesion"><br><br>
+            <button id="agregar">AGREGAR</button><br><br>
+            <div id="result"></div><br><br>
+        </div>
+        <div class="tabla">
+            <table border="3">
+                <thead>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Edad</td>
+                    <td>CURP</td>
+                    <td>Profesión</td>
+                </thead>
+                <tbody id="datos"></tbody>
+            </table>
+        </div>
+    </div><br><br>
+    <div id="array1"></div><br><br>
+    <div id="array2"></div><br><br>
+    <script src="./app.js"></script>
+</body>
+</html>
