@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #e64b33;
+    text-align: center;
+}
+
+.box1{
+    padding: 10px;
+    border: 5px solid #457b9d;
+    margin: 30px;
+    background-color: rgb(225, 155, 45);
+    max-width: 300px;
+    /* outline: 10px outset #a8dadc; */
+}
+
+.box2{
+    padding: 10px;
+    border: 5px solid #457b9d;
+    margin: 20px;
+    background-color: rgb(225, 155, 45);
+    max-width: 300px;
+    /* outline: 10px outset #a8dadc; */
+}

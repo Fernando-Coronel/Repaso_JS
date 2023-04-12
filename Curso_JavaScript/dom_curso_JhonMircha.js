@@ -320,6 +320,51 @@ $eventoMultiple.addEventListener('click', (e) => {
     console.log(e.type);
     console.log(e.target);
     console.log(event);
-})
+});
+
+// Eliminar eventos
+console.log("--------------->Eliminar eventos<------------------");
+
+const $eventoRemover = document.getElementById("eliminarEvento");
+
+const eliminarEvento = (e) => {
+    console.log(`Removiendo el evento ${e.type}`);
+    $eventoRemover.removeEventListener("click", eliminarEvento);
+    $eventoRemover.disabled = true;
+};
+
+$eventoRemover.addEventListener("click", eliminarEvento);
+
+// Flujo de eventos
+console.log("------------->Flujo de eventos<---------------");
+
+const $eventos = document.querySelectorAll(".eventos-flujo div");
+
+function flujoEventos(e){
+    console.log(`Hola te saluda ${this.className}, el click lo originó ${e.target.className}`);
+}
+
+console.log($eventos);
+
+$eventos.forEach(div => {
+    div.addEventListener("click", flujoEventos, {
+        // capture:true
+    });
+    
+    // Delegación de eventos
+    console.log("------------->Delegación de eventos<------------------");
+    // const delEventos = document.getElementById("delEventos");
+    
+    // delEventos.addEventListener("click", (e) =>{
+    //     console.log("click en ", e.target)
+    // })
+    
+    document.addEventListener("click", (e) =>{
+        console.log("click en ", e.target);
+    })
+});
+
+
+
 
 // Ejercicios de logica del DOM de curso JhonMircha.

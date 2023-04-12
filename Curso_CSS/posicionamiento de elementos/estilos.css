@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+/* div{
+    max-width: 50%;
+    border: 3px solid firebrick;
+    margin: auto;
+} */
+
+.static{
+    position: static;
+    top: 100px;
+    left: 100px;
+    max-width: 50%;
+    border: 3px solid rgb(34, 168, 178);
+    margin: auto; 
+}
+
+.relative{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    max-width: 50%;
+    border: 3px solid rgb(34, 92, 178);
+    margin: auto;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+    border: 3px solid rgb(34, 92, 178);
+    margin: auto;
+}
+
+.div-relativo{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border: 3px solid cornflowerblue;
+    top: 100px;
+    left: 100px;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    border: 3px solid rgb(34, 92, 178);
+}

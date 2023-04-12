@@ -43,6 +43,24 @@
             padding: 1rem;
         }
 
+        .eventos-flujo div{
+            padding: 4rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .uno{
+            background-color: yellow;
+        }
+
+        .dos{
+            background-color: gold;
+        }
+
+        .tres{
+            background-color: lightyellow;
+        }
+
     </style>
 </head>
 <body>
@@ -108,6 +126,27 @@
     <br><br>
     <button id="evento-semantico">Evento con manejador semantico</button><br><br>
     <button id="evento-multiple">Evento con manejador multiple</button>
+    <hr>
+    <!-- Eliminar eventos -->
+    <h2>Eliminar eventos</h2>
+    <button id="eliminarEvento">Eliminar Evento</button>
+    <hr>
+
+    <!-- Flujo de eventos -->
+    <h2>Flujo de eventos</h2>
+    <section class="eventos-flujo">
+        <div class="uno">1
+            <div class="dos">2
+                <div class="tres">3</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Delegacion de eventos -->
+    <h2>Delegacion de eventos</h2>
+
+    <button id="delEventos">Delegacion de eventos</button>
 
     <hr>
     <!-- Ejercicios de logica del DOM de curso JhonMircha -->
@@ -115,5 +154,6 @@
 
 
     <script src="dom_curso_JhonMircha.js"></script>
+    <!-- <script src="01_sistema_de_ventas.js"></script> -->
 </body>
 </html>
