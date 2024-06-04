@@ -1,0 +1,808 @@
+Algoritmo repaso_logica_programacion
+	//Calcular el 15% de descuento en la compra de un usuario
+	//totalCompra = 0
+	
+	//Imprimir "Ingrese la cantidad de su compra: "
+	//leer totalCompra
+	
+	//descuento = totalCompra * 15 / 100
+	//precioFinal = totalCompra - descuento
+	
+	//Imprimir "El precio final con el 15% descuento es: ", precioFinal
+	
+	//Calcular el nuevo salario de un obrero si obtuvo un incremento del 25% sobre su salario anterior.
+	
+	//salario = 0
+	
+	//Imprimir "Ingrese su salario: "
+	//Leer salario
+	//aumento = salario * 0.25
+	//salarioFinal = salario + aumento
+	
+	//Imprimir "Su salario con el aumento del 25% es de: ", salarioFinal
+	
+	//Calcula la cantidad de segundos que estan incluidos en el número de horas, minutos y segundos ingresados por el usuario.
+	
+	//horas = 0
+	//min = 0
+	//seg = 0
+	
+	//Imprimir "Digite el numero de horas"
+	//Leer horas
+	//Imprimir "Digite el numero de minutos"
+	//Leer min
+	//Imprimir "Digite el numero de segundos"
+	//leer seg
+	
+	//t1 = horas * 3600
+	//t2 = minutos * 60
+	//t3 = seg * 1
+	
+	//totalSegundos = t1 + t2 + t3
+	
+	//Imprimir "El total de segundos equivalentes es: ",  totalSegundos  ," segundos."
+	
+	//Un maestro desea saber que porcentaje de hombre y mujeres que hay en un grupo de estudiantes.
+	
+	//nHombres = 0
+	//nMujeres = 0
+	//total = 0
+	
+	//Imprimir "Ingrese el numero de hombres que hay en el salon"
+	//leer nHombres
+	//Imprimir "Ingrese el numero de mujeres que hay en el salon"
+	//Leer nMujeres
+	
+	//total = nHombres + nMujeres
+	//porcentajeH = (nHombres * 100) / total
+	//porcentajeM = (nMujeres * 100) / total
+	
+	//Imprimir "El porcentaje de hombres es: ", porcentajeH, "%"
+	//Imprimir "El porcentaje de mujeres es: ", porcentajeM, "%"
+	
+	
+	//Tres personas deciden invertir su dinero para fundar una empresa. cada una de ellas invierte una cantidad distinta, obtener el porcentaje de cada quien invierte con respectoa la cantidad total invertida.
+	//pInversion = 0
+	//sInversion = 0
+	//tInversion = 0
+	
+	//Imprimir "Ingrese la primera inversion: "
+	//Leer pInversion
+	//Imprimir "Ingrese la segunda inversion: "
+	//leer sInversion
+	//Imprimir "Ingrese la tercera inversion: "
+	//Leer tInversion
+	
+	//total = pInversion + sInversion + tInversion
+	
+	//porcentaje1 = (pInversion * 100) / total
+	//porcentaje2 = (sInversion * 100) / total
+	//porcentaje3 = (tInversion * 100) / total
+	
+	//Imprimir "El porcentaje de la primera inversion es: ", porcentaje1, "%"
+	//Imprimir "El porcentaje de la segunda inversion es: ", porcentaje2, "%"
+	//Imprimir "El porcentaje de la tercera inversion es: ", porcentaje3, "%"
+	
+	//Determinar si un numero es par o no
+	
+	//numero = 0
+	
+	//Imprimir "Digite un numero"
+	//leer numero
+	
+	//Si numero = 0 Entonces
+		//Imprimir "El numero es cero"
+	//SiNo
+		//Si numero mod 2 == 0 Entonces
+			//Imprimir "El numero es par"
+		//SiNo
+			//Imprimir "El numero es impar"
+		//Fin Si
+	//Fin Si
+	
+	//Ejercicio propuesto 1.-
+	//Dado 3 numeros calcular cual es el mayor
+	
+	//numero1 = 0
+	//numero2 = 0
+	//numero3 = 0
+	
+	//Imprimir "Digite 3 numeros"
+	//Leer numero1, numero2, numero3
+	
+	//Si numero1 > numero2 Entonces
+		//Si numero1 > numero3 Entonces
+			//Imprimir "El numero mayor es: ", numero1
+		//Fin Si
+	//SiNo
+		//Si numero2 > numero3 Entonces
+			//Imprimir "El numero mayor es: ", numero2
+		//SiNo
+			//Imprimir "El numero mayor es: ", numero3
+		//Fin Si
+	//Fin Si
+	
+	//Ingrese 2 numeros desde el teclado e imprima los numeros positivos
+	
+	//numero1 = 0
+	//numero2 = 0
+	
+	//Imprimir "Ingrese 2 numeros"
+	//Leer numero1, numero2
+	
+	//Si numero1 > 0 y numero2 > 0 Entonces
+		//Imprimir "El numero ",numero1, " y el numero ", numero2, " son positivos"
+	//SiNo
+		//Si numero1 < 0 y numero2 < 0 Entonces
+			//Imprimir "Los dos numeros son menores a cero ", numero1, numero2
+		//SiNo
+			//Si numero1 > 0 Entonces
+				//Imprimir "Solo el primero numero ", numero1, " que ingreso es mayor a cero"
+			//SiNo
+				//Imprimir "Solo el segundo numero ", numero2, " que ingreso es mayor a cero"
+			//FinSi
+		//FinSi
+	//FinSi
+	
+	//Ejercicio propuesto 2
+	//Un obrero necesita calcular su salario semanal, el cual se obtiene de la siguiente manera:
+	//*Si trabaja 40 horas o menos se le paga $16 dolares por hora.
+	//*Si trabaja mas de 40 horas se le paga $16 dolares por cada una de las primeras 40 horas y $20 por cada hora extra.
+	
+	//horas = 0
+	
+	//Imprimir "Ingrese las horas trabajadas"
+	//Leer horas
+	
+	//Si horas <= 40 Entonces
+		//salario = horas * 16
+	//SiNo
+		//horasExtra = horas - 40
+		//hora = horas - horasExtra
+		//salario = (hora * 16) + (horasExtra * 20)
+	//FinSi
+	
+	//Imprimir "Su salario es: ", salario
+	
+	
+	//Calcular el total a pagar por la compra de camisas, si se compran 3 camisas o mas se aplica un descuento del 20% sobre el total de la compra y si son menos de 3 camisas un descuento del 10%
+	
+	//numeroCamisas = 0
+	//precioCamisa = 0
+	
+	//Imprimir "Ingrese el numero de camisas"
+	//Leer numeroCamisas
+	//Imprimir "Ingrese el precio de la camisa"
+	//Leer precioCamisa
+	
+	//Si numeroCamisas >= 3 Entonces
+		//precioCompra = numeroCamisas * precioCamisa
+		//descuento = precioCompra * 0.20
+		//precioFinal = precioCompra - descuento
+		//Imprimir "El precio final con el 20% de descuento es: ",precioFinal
+	//SiNo
+		//precioCompra = numeroCamisas * precioCamisa
+		//descuento = precioCompra * 0.10
+		//precioFinal = precioCompra - descuento
+		//Imprimir "El precio final con el 10% de descuento es: ",precioFinal
+	//Fin Si
+	
+	
+	//En un supermercado hacen una promocion que el cliente escoge un numero de una tombola, si el numero es mayor o igual a 74 se le aplica el 20% de descuento 
+	//y si es menor el 15% de descuento al total de su compra
+	
+	//numero = azar(100)
+	//compra = 0
+	
+	//Imprimir "Ingresa el total de su compra"
+	//Leer compra
+	
+	//Si numero <= 74 Entonces
+		//descuento = compra * 0.15
+		//precio = compra - descuento
+		//Imprimir "El numero al azar es: ",numero," por lo tanto el precio a pagar es: ",precio
+	//SiNo
+		//descuento = compra * 0.20
+		//precio = compra - descuento
+		//Imprimir "El numero al azar es: ",numero," por lo tanto el precio a pagar es: ",precio
+	//FinSi
+	
+	//Calcular el total que una persona debe pagar en una llantera, si el precio de cada llanta es de $800 pesos
+	//si se compran menos de 5 llantas y si se compran mas de 5 llantas el precio es de $700
+	
+	//numeroLlantas = 0
+	
+	//Imprimir "Ingrese el numero de llantas compradas"
+	//Leer numeroLlantas
+	
+	//Si numeroLlantas >= 5 Entonces
+		//precio = numeroLlantas * 700
+		//Imprimir "El precio total a pagar es: ",precio
+	//SiNo
+		//precio = numeroLlantas * 800
+		//Imprimir "El precio total a pagar es: ",precio
+	//FinSi
+	
+	//Ejercicio propuesto
+	//En un almacen se hace un 20% de descuento a los clientes cuya compra superen los 1000 pesos
+	
+	//totalCompra = 0
+	
+	//Imprimir "Ingrese el total de su compra"
+	//Leer totalCompra
+	
+	//Si totalCompra >= 1000 Entonces
+		//descuento = totalCompra * 0.20
+		//precioTotal = totalCompra - descuento
+		//Imprimir "El precio total de su compra $",totalCompra," con el 20% de descuento es:$",precioTotal,"."
+	//SiNo
+		//Imprimir "El total de su compra $",totalCompra, " no obtuvo el descuento porque es menor a $1000."
+	//FinSi
+	
+	//Ecuaciones de segundo grado
+	//Formula (-B +- sqrt(B*B - 4*A*C)) / 2 * A
+	//D = B * B - 4*A*C
+	//F = (-B+- sqrt(D)) / 2*A
+	//D > 0
+	//respuesta1 = (-B + sqrt(D))/2*A
+	//respuesta2 = (-B - sqrt(D))/2*A
+	
+	//a = 0
+	//b = 0
+	//c = 0
+	
+	//Imprimir "Ingrese el valor de A"
+	//Leer a
+	//Imprimir "Ingrese el valor de B"
+	//Leer b
+	//Imprimir "Ingrese el valor de C"
+	//Leer c
+	
+	//d = b*b - 4*a*c
+	
+	//Si d > 0 Entonces
+		//respuesta1 = (-b + raiz(d))/(2*a)
+		//respuesta2 = (-b - raiz(d))/(2*a)
+		//Imprimir "La respuesta 1 es: ",respuesta1
+		//Imprimir "La respuesta 2 es: ",respuesta2
+	//SiNo
+		//Imprimir "La ecuacion no tiene valor real"
+	//FinSi
+	
+	
+	//Hacer un programa que simule el lanzamiento de una moneda
+	
+	//numero = azar(2)
+	
+	//Si numero == 1 Entonces
+		//Imprimir "SOL"
+	//SiNo
+		//Imprimir "AGUILA"
+	//FinSi
+	
+	//En una tienda de descuento se efectua una promocion en la cual se hace un descuento sobre el valor de la compra total segun el color 
+	//de la bolita que el cliente saque al pagar en caja. si la bolita es de color blanco no se le hara un 10% de descuento, 
+	//si es amarilla un 245 si es azul un 50% y su es roja un 100%. se sabe que solo hay bolitas de los colores mencionados.
+	
+	//compra = 0
+	//numero = azar(5)
+	
+	//Imprimir "Ingresa el total de tu compra"
+	//Leer compra
+	
+	//Si numero = 1 Entonces
+		//Imprimir "Bolita color blanco es 0% ", compra
+	//SiNo
+		//Si numero = 2 Entonces
+			//descuento = compra * 0.10
+			//precioFinal = compra - descuento
+			//Imprimir "Bolita color verde es de 10% ", precioFinal
+		//SiNo
+			//Si numero = 3 Entonces
+				//descuento = compra * 0.25
+				//precioFinal = compra - descuento
+				//Imprimir "Bolita color amarillo es de 25% ",precioFinal
+			//SiNo
+				//Si numero = 4 Entonces
+					//descuento = compra * 0.50
+					//precioFinal = compra - descuento
+					//Imprimir "Bolita color azul es de 50% ",precioFinal
+				//SiNo
+					//Imprimir "Felicidades salio bolita roja, compra gratis 100%"
+				//FinSi
+			//FinSi
+		//FinSi
+	//FinSi
+	
+	//Hacer un programa que pida 3 numeros e indicar si el tercero es igual a la suma del primero y el segundo
+	
+	//numero1 = 0
+	//numero2 = 0
+	//numero3 = 0
+	//Imprimir "Ingrese 3 numeros"
+	//Leer numero1,numero2,numero3
+	
+	//Si numero1 + numero2 = numero3 Entonces
+		//Imprimir "Si cumple la condicion ya que ", numero1," + ", numero2, " es igual a ", numero3
+	//SiNo
+		//Imprimir "No se cumple la condicion ya que ",numero1, " + ", numero2, " es igual a ", numero1 + numero2, " y no ", numero3
+	//FinSi
+	
+	//Hacer un programa que pida 3 numeros e indicar si la multiplicacion de los primero 2 numeros es igual al tercero
+	
+	//numero1 = 0
+	//numero2 = 0
+	//numero3 = 0
+	
+	//Imprimir "Ingrese 3 numeros"
+	//Leer numero1,numero2,numero3
+	
+	//Si numero1 * numero2 = numero3 Entonces
+		//Imprimir "Si se cumple la condicion ya que ", numero1, " X ", numero2, " es igual a ",numero3
+	//SiNo
+		//Imprimir "No se cumple la condicion ya que ", numero1, " X ", numero2, " es igual a ", numero1 * numero2, " y no ", numero3
+	//FinSi
+	
+	//Hacer un programa que lea una hora en hora:minutos:segundos y diga la hora que es un segundo despues.
+	
+	//horas = 0
+	//minutos = 0
+	//seg = 0
+	
+	//Imprimir "Ingrese las horas"
+	//Leer horas
+	//Imprimir "Ingrese los minutos"
+	//Leer minutos
+	//Imprimir "Ingrese los segundos"
+	//Leer seg
+	
+	//seg = seg + 1
+	
+	//Si minutos > 59 Entonces
+		//minutos = 0
+		//Si horas > 23 Entonces
+			//horas = 0
+			//Si seg > 59 Entonces
+				//seg = 0
+				//minutos = minutos + 1
+				//Si minutos > 59 Entonces
+					//minutos = 0
+					//horas = horas + 1
+						//Si horas > 23 Entonces
+							//horas = 0
+						//FinSi
+				//FinSi
+			//FinSi
+		//FinSi
+	//FinSi
+	
+	//Imprimir "La hora despues de un segundo es: ", horas,":",minutos,":",seg 
+	
+	//Hacer un programa que sume los primeros 5 numeros
+	
+	//suma = 0
+	
+	//Para i = 1 Hasta 5 Con Paso 1 Hacer
+	//suma = suma + i
+	//Imprimir "La suma es: ",suma
+	//Fin Para
+	
+	//Imprimir "La suma total es: ",suma
+	
+	
+	//con bucle mientras
+	
+	//suma = 0
+	//i = 1
+	
+	//Mientras i <= 5 Hacer
+		//suma = suma + i
+		//i = i + 1
+		//Imprimir "La suma es: ",suma
+	//FinMientras
+	
+	//Imprimir "La suma total es: ",suma
+	
+	//Suma de los n primeros numeros
+	
+	//suma = 0
+	//numero = 0
+	
+	//Imprimir "Ingrese el numero de elementos"
+	//Leer numero
+	
+	//Para i = 1 Hasta numero Con Paso 1
+		//suma = suma + i
+	//FinPara
+	
+	//Imprimir "La suma de los ",numero, " elementos es: ",suma
+	
+	//Digite un numero, si el numero es mayor a 10 multiplique los primeros 10 numeros sino sumarlos
+	
+	//numero = 0
+	//multi = 1
+	//suma  = 0
+	
+	//Imprimir "Ingrese un numero "
+	//Leer numero
+	
+	//Si numero >= 10 Entonces
+		//Para i =1 Hasta 10 Con Paso 1
+			//multi = multi * i
+		//FinPara
+		//Imprimir "El resultado de la multiplicacion es: ",multi
+	//SiNo
+		//Para i = 1 Hasta 10 Con Paso 1
+			//suma = suma + i
+		//FinPara
+		//Imprimir "El resultado de la suma es: ",suma
+	//FinSi
+	
+	//Hacer programa que de multiplos de 3 desde 1 hasta n elementos
+	
+	//numero = 0
+	
+	//Imprimir "Ingrese el numero de elementos"
+	//Leer numero
+	
+	//Para i = 1 Hasta numero Con Paso 1
+		//Si i % 3 = 0 Entonces
+			//Imprimir "El numero ", i, " es multiplo de 3"
+		//FinSi
+	//FinPara
+	
+	
+	//Hacer un programa que de los multiplos de 5 desde 1 hasta n elementos
+	
+	//numero = 0
+	
+	//Imprimir "Ingrese el numero de elementos"
+	//Leer numero
+	//Para i = 1 Hasta numero Con Paso 1
+		//Si i % 5 = 0 Entonces
+			//Imprimir "El numero ",i, " es multiplo de 5"
+		//FinSi
+	//FinPara
+	
+	//Hacer un programa que sume 1-2+3-4...
+	
+	//numero = 0
+	//suma = 0
+	//suma1 = 0
+	
+	//Imprimir "Ingrese el numero de elementos"
+	//Leer numero
+	//Para i = 1 Hasta numero Con Paso 1
+		//Si i % 2 = 0 Entonces
+			//n = i * (-1)
+			//suma1 = suma1 + n
+		//SiNo
+			//suma = suma + i
+		//FinSi
+		
+		//sumaTotal = suma + suma1
+		
+	//FinPara
+	
+	//Imprimir "La suma es: ",sumaTotal
+	
+	
+	//Hacer programa que sume pares desde n hasta m
+	
+	//numeroInicial = 0
+	//numeroFinal = 0
+	//suma = 0
+	
+	//Imprimir "Ingrese el numero inicial"
+	//Leer numeroInicial
+	//Imprimir "Ingrese el numero final"
+	//Leer numeroFinal
+	
+	//Para i = numeroInicial Hasta numeroFinal Con Paso 1
+		//Si i % 2 = 0 Entonces
+			//suma = suma + i
+		//FinSi
+	//FinPara
+	
+	//Imprimir "La suma de los numeros pares desde ",numeroInicial, " hasta ",numeroFinal, " es: ",suma
+	
+	
+	//Hacer un programa que ingrese un numero el usuario y determine si es primo o no
+	//El numero primo es aquel que es divisible entre 1 y si mismo, si tiene mas de dos divisores ya no es primo
+	
+	//numero = 0
+	//conteo = 0
+	
+	//Imprimir "Ingrese un numero"
+	//Leer numero
+	
+	//Para i = 1 Hasta numero Con Paso 1
+		//Si numero % i = 0 Entonces
+			//conteo = conteo + 1
+		//FinSi
+	//FinPara
+	
+	//Si conteo > 2 Entonces
+		//Imprimir "El numero ",numero, " no es un numero primo"
+	//SiNo
+		//Imprimir "El numero ",numero," si es primo"
+	//FinSi
+	
+	
+	//Hacer programa que haga el factorial de un numero
+	
+	//numero = 0
+	//factorial = 1
+	//i = 1
+	
+	//Imprimir "Ingrese un numero"
+	//Leer numero
+	
+	//Mientras i <= numero
+		//factorial = factorial * i
+		//i = i + 1
+	//FinMientras
+	
+	//Imprimir "El factorial del numero ",numero," es: ",factorial
+	
+	//Serie fibonacci
+	
+	//numeroElementos = 0
+	//a = 0
+	//b = 1
+	//c = 1
+	
+	//Imprimir "Ingrese el numero de elementos"
+	//Leer numeroElementos
+	
+	//Para i = 1 Hasta numeroElementos Con Paso 1
+		
+		//c = a + b
+		//a = b
+		//b = c
+		
+		//Imprimir c
+		
+	//FinPara
+	
+	//Hacer un programa que imprima la suma de todos los numeros pares que hay desde 1 hasta n, y diga cuantos numeros hay.
+	
+	//n = 0
+	//suma = 0
+	//conteo = 0
+	
+	//Imprimir "Ingrese un numero"
+	//Leer n
+	
+	//Para i = 1 Hasta n Con Paso 1
+		//Si i % 2 = 0 Entonces
+			//suma = suma + i
+			//conteo = conteo + 1
+		//FinSi
+	//FinPara
+	
+	//Imprimir "La suma es: ", suma, " y hay ",conteo," numeros pares"
+	
+	//Hacer un programa que imprima la suma de todos los numeros impares que hay desde n hasta m, y diga cuantos numeros hay.
+	
+	//numeroInicial = 0
+	//numeroFinal = 0
+	//suma = 0
+	//conteo = 0
+	
+	//Imprimir "Ingrese el numero de inicio"
+	//Leer numeroInicial
+	
+	//Imprimir "Ingrese el numero final"
+	//Leer numeroFinal
+	
+	//Para i = numeroInicial Hasta numeroFinal Con Paso 1
+		//Si i % 2 = 1 Entonces
+			//suma = suma + i
+			//conteo = conteo + 1
+		//FinSi
+	//FinPara
+	
+	//Imprimir "La suma es: ", suma, " y hay ",conteo," numeros impares"
+	
+	//Hacer un programa que pida dos numeros y muestre todos los numeros que van desde el primero al segundo.
+	//Se debe controlar que los valores sean correctos
+	
+	//numero1 = 0
+	//numero2 = 0
+	
+	//Imprimir "Ingrese dos numeros"
+	//Leer numero1, numero2
+	
+	//Si numero1 > numero2 Entonces
+		//Imprimir "No estan en orden correcto"
+	//SiNo
+		//Para i = numero1 Hasta numero2 Con Paso 1
+			//Imprimir i
+		//FinPara
+	//FinSi
+	
+	//Hacer un programa que pida dos numeros y muestre todos los numeros que van desde el primero al segundo. Se debe controlar que los valores son correctos.
+	
+	//numero1 = 0
+	//numero2 = 0
+	
+	//Imprimir "Ingrese dos numeros: "
+	//Leer numero1, numero2
+	
+	//Si numero1 > numero2 Entonces
+		//Imprimir "No estan en orden correcto"
+	//SiNo
+		//Para i = numero1 Hasta numero2 Con Paso 1
+			//Imprimir i
+		//FinPara
+	//FinSi
+
+	//Hacer un programa que pida 2 numeros y sume todos los numeros desde el primero hatsa el segunfo. se debe controlar que los valores son correctos.
+	
+	//numero1 = 0
+	//numero2 = 0
+	//suma = 0
+	
+	//Imprimir "Ingrese dos numeros: "
+	//Leer numero1, numero2
+	
+	//Si numero1 > numero2 Entonces
+		//Imprimir "No estan en orden correcto"
+	//SiNo
+		//Para i = numero1 Hasta numero2 Con Paso 1
+			//suma = suma + i
+			//Imprimir suma
+		//FinPara
+	//FinSi
+	
+	//Hacer un programa que haga un menu del tipo "desea salir (s/n)" y el programa no termine hasta que el usuario teclee "S".
+	
+	//letra = ""
+	
+	//Imprimir "Desea salir del programa?"
+	//Leer letra
+	
+	//Mientras letra <> "S" Hacer
+		//Imprimir "Desea salir del programa?"
+		//Leer letra
+	//FinMientras
+	
+	//Imprimir "ĄHasta luego!"
+	
+	//Hacer un programa que calcule la media aritmetica de n numeros
+	
+	//numeroElementos = 0
+	//suma = 0
+	//numero = 0
+	
+	//Imprimir "Ingresa el numero de elementos"
+	//Leer numeroElementos
+	
+	//Para i = 1 Hasta numeroElementos Con Paso 1
+		//Imprimir "Ingrese un numero"
+		//Leer numero
+		//suma = suma + numero
+	//FinPara
+	
+	//media = suma / numeroElementos
+	//Imprimir "La media aritmetica es: ",media
+	
+	
+	//Arreglos o vectores
+	//Hacer un programa que rellene un arreglo con los 10 primeros numeros
+	//enteros y los muestre en pantalla en orden ascendente.
+	
+	//Dimension arreglo(10)
+		
+		//Para i <- 1 Hasta 10 Con Paso 1 Hacer
+			//arreglo(i) <- 0
+		//FinPara
+		
+		//Para i <- 1 Hasta 10 Con Paso 1 Hacer
+			//arreglo(i) <- i
+		//FinPara
+		
+		//Para i <- 1 Hasta 10 Con Paso 1 Hacer
+			//Imprimir (arreglo(i))
+	//FinPara
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+FinAlgoritmo
